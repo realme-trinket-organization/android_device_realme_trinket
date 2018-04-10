@@ -308,7 +308,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libc2dcolorconvert \
-    libextmedia_jni \
     libhypv_intercept \
     libmm-omxcore \
     libOmxCore \
