@@ -33,6 +33,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
 
+PRODUCT_PACKAGES += \
+    NoCutoutOverlay
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES := \
     $(LOCAL_PATH) \
