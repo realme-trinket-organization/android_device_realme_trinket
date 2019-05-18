@@ -23,6 +23,7 @@
 
 # Inherit properties
 $(call inherit-product, $(LOCAL_PATH)/properties.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
