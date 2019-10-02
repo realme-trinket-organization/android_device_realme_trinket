@@ -158,7 +158,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Iorap
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.iorapd.enable=true
+    ro.iorapd.enable=true \
+    iorapd.readahead.enable=true
 
 # Keymaster 4.0 - TDES support
 PRODUCT_PROPERTY_OVERRIDES += \
