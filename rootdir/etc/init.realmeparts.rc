@@ -24,3 +24,7 @@ on boot
     chown system system /sys/class/timed_output/vibrator/vtg_level
     chown system system /sys/class/timed_output/vibrator/vtg_max
     chown system system /sys/class/timed_output/vibrator/vtg_min
+
+    # Allow system to read measured screen FPS
+    chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
+    chmod 0660 /sys/devices/virtual/graphics/fb0/measured_fps

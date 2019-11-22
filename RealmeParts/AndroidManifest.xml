@@ -115,5 +115,10 @@
             </intent-filter>
         </service>
 
+        <service
+            android:name="com.realme.realmeparts.fpsinfo.FPSInfoService"
+            android:exported="false">
+        </service>
+
     </application>
 </manifest>
