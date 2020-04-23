@@ -1,0 +1,9 @@
+allow system_app kcal_dev:file rw_file_perms;
+allow system_app kcal_dev:dir search;
+
+allow system_app sysfs_vibrator:file rw_file_perms;
+allow system_app sysfs_vibrator:dir search;
+
+# Allow access switches
+allow system_app sysfs_switch:dir search;
+allow system_app sysfs_switch:file rw_file_perms;

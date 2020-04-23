@@ -283,6 +283,7 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
+    init.realmeparts.rc \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
@@ -392,6 +393,10 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+
+# RealmeParts
+PRODUCT_PACKAGES += \
+    RealmeParts
 
 # Recovery
 PRODUCT_PACKAGES += \
