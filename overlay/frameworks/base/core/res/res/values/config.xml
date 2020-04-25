@@ -358,4 +358,7 @@
         <item>com.google.android.gms/com.google.android.gms.nearby.messages.service.NearbyMessagesService</item>
         <item>com.google.android.gms/com.google.android.gms.nearby.discovery.service.DiscoveryService</item>
     </string-array>
+
+    <!-- Whether device has a physical display cutout -->
+    <bool name="config_physicalDisplayCutout">true</bool>
 </resources>
