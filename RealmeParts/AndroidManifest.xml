@@ -16,7 +16,7 @@
           android:sharedUserId="android.uid.system"
           package="com.realme.realmeparts"
           android:versionCode="1"
-          android:versionName="1.0" >
+          android:versionName="1.1" >
 
     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />

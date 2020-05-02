@@ -18,8 +18,8 @@ package com.realme.realmeparts.kcal;
 
 import android.os.Bundle;
 import android.provider.Settings;
-import android.support.v14.preference.PreferenceFragment;
-import android.support.v7.preference.Preference;
+import androidx.preference.Preference;
+import androidx.preference.PreferenceFragment;
 
 import com.realme.realmeparts.R;
 import com.realme.realmeparts.preferences.CustomSeekBarPreference;

@@ -19,8 +19,6 @@ package com.realme.realmeparts.preferences;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
-import android.support.v4.content.res.TypedArrayUtils;
-import android.support.v7.preference.*;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.View;
@@ -30,6 +28,8 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.core.content.res.TypedArrayUtils;
+import androidx.preference.*;
 
 import com.realme.realmeparts.R;
 
@@ -104,7 +104,7 @@ public class CustomSeekBarPreference extends Preference implements SeekBar.OnSee
 
     public CustomSeekBarPreference(Context context, AttributeSet attrs) {
         this(context, attrs, TypedArrayUtils.getAttr(context,
-                android.support.v7.preference.R.attr.preferenceStyle,
+                androidx.preference.R.attr.preferenceStyle,
                 android.R.attr.preferenceStyle));
     }
 
