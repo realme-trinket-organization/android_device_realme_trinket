@@ -49,7 +49,7 @@ public class FPSInfoService extends Service {
     private final String TAG = "FPSInfoService";
     private String mFps = null;
 
-    private static final String MEASURED_FPS = "/sys/devices/virtual/graphics/fb0/measured_fps";
+    private static final String MEASURED_FPS = "/sys/class/drm/card0/sde-crtc-0/measured_fps";
 
     private IDreamManager mDreamManager;
 
@@ -71,7 +71,7 @@ public class FPSInfoService extends Service {
                 }
 
                 String msgData = (String) msg.obj;
-                msgData = msgData.substring(0, Math.min(msgData.length(), 9));
+                msgData = msgData.trim().split("\\s+")[1];
                 mFps = msgData + " FPS";
                 mDataAvail = true;
                 updateDisplay();
