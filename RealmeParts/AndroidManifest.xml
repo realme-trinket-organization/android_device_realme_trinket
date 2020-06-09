@@ -27,7 +27,7 @@
         android:minSdkVersion="24" />
 
     <application
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_realmeparts"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
@@ -96,7 +96,7 @@
         <service
             android:name=".RealmePartsTile"
             android:enabled="true"
-            android:icon="@drawable/ic_settings_device"
+            android:icon="@drawable/ic_realmeparts"
             android:label="@string/device_title"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
