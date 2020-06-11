@@ -27,7 +27,7 @@
         android:minSdkVersion="24" />
 
     <application
-        android:icon="@mipmap/ic_realmeparts"
+        android:icon="@drawable/ic_realmeparts"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
@@ -54,7 +54,7 @@
             </intent-filter>
             <meta-data
                 android:name="com.android.settings.icon"
-                android:resource="@drawable/ic_settings_device" />
+                android:resource="@drawable/ic_realmeparts" />
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
