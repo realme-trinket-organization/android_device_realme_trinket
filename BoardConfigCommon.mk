@@ -24,8 +24,6 @@
 
 COMMON_PATH := device/realme/sm6125-common
 
-BOARD_VENDOR := realme
-
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := trinket
 TARGET_NO_BOOTLOADER := true
