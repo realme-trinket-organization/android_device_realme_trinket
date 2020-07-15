@@ -254,9 +254,6 @@ on boot
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
-    # OTG
-    write /sys/class/power_supply/usb/otg_switch 1
-
     # Add for touchscreen firmware update check
     write /proc/touchpanel/tp_fw_update 1
 

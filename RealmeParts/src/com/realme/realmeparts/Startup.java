@@ -29,9 +29,13 @@ public class Startup extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, final Intent bootintent) {
+        boolean enabled = false;
 
         VibratorStrengthPreference.restore(context);
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+        enabled = sharedPrefs.getBoolean(RealmeParts.KEY_OTG_SWITCH, false);
+        restore(OTGModeSwitch.getFile(), enabled);
     }
 
     private void restore(String file, boolean enabled) {

@@ -49,9 +49,12 @@ public class RealmeParts extends PreferenceFragment
     private static final String PREF_DEVICE_KCAL = "kcal";
 
     public static final String KEY_VIBSTRENGTH = "vib_strength";
+    public static final String KEY_OTG_SWITCH = "otg";
 
     private Preference mKcal;
     private VibratorStrengthPreference mVibratorStrength;
+
+    private static TwoStatePreference mOTGModeSwitch;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -69,6 +72,11 @@ public class RealmeParts extends PreferenceFragment
             startActivity(intent);
             return true;
         });
+
+        mOTGModeSwitch = (TwoStatePreference) findPreference(KEY_OTG_SWITCH);
+        mOTGModeSwitch.setEnabled(OTGModeSwitch.isSupported());
+        mOTGModeSwitch.setChecked(OTGModeSwitch.isCurrentlyEnabled(this.getContext()));
+        mOTGModeSwitch.setOnPreferenceChangeListener(new OTGModeSwitch());
     }
 
     @Override
