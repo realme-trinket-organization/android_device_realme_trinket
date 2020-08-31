@@ -20,10 +20,7 @@ on boot
     chmod 0666 /sys/class/power_supply/usb/otg_switch
 
     # Vibrator
-    chown system system /sys/class/timed_output/vibrator/vtg_default
-    chown system system /sys/class/timed_output/vibrator/vtg_level
-    chown system system /sys/class/timed_output/vibrator/vtg_max
-    chown system system /sys/class/timed_output/vibrator/vtg_min
+    chown system system /sys/class/leds/vibrator/vmax_mv
 
     # Allow system to read measured screen FPS
     chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
