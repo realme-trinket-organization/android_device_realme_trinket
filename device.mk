@@ -373,6 +373,10 @@ PRODUCT_PACKAGES += \
     libOmxVenc \
     libstagefrighthw
 
+# Power-libperfmgr
+PRODUCT_PACKAGES += \
+     android.hardware.power@1.3-service.realme_trinket-libperfmgr
+
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-vendorcompat \
