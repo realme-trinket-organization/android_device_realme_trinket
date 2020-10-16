@@ -25,5 +25,8 @@ realme_trinket_init_library_static {
         "system/core/base/include",
         "system/core/init",
         "device/realme/sm6125-common"
+    ],
+    shared_libs: [
+        "libbase",
     ]
 }
