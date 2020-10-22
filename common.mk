@@ -421,6 +421,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     $(LOCAL_PATH)/seccomp/mediaextractor-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy
 
+# Servicetracker
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.servicetracker@1.0.vendor \
+    vendor.qti.hardware.servicetracker@1.1.vendor \
+    vendor.qti.hardware.servicetracker@1.2.vendor
+
 # Tetheroffload
 PRODUCT_PACKAGES += \
     ipacm \
