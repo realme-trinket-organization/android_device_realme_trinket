@@ -2783,11 +2783,7 @@ vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
--vendor/lib64/libplatformconfig.so
--vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
--vendor/lib/libplatformconfig.so
--vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
 # DPM - from ginkgo-user 10 QKQ1.200114.002 V12.0.6.0.QCOEUXM release-keys
 -framework/tcmclient.jar|6ef9ca98f67c144fc8ae941bb3a47f99cbd93098
