@@ -176,9 +176,6 @@ TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_realme_trinket
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
-# RIL
-TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
-
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
