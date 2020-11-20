@@ -45,7 +45,8 @@
         <SwitchPreference
             android:key="otg"
             android:summary="@string/otg_mode_summary"
-            android:title="@string/otg_mode_title" />
+            android:title="@string/otg_mode_title"
+            android:icon="@drawable/ic_otg_tile" />
     </PreferenceCategory>
 
 </PreferenceScreen>
