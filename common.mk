@@ -176,7 +176,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libdisplayconfig.qti \
     libdisplayconfig.vendor \
-    liboverlay \
     libtinyxml \
     libvulkan \
     libqdMetaData \
