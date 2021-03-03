@@ -156,6 +156,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.dbg.vt_avail_ovr=1  \
     persist.dbg.wfc_avail_ovr=1
 
+# Iorap
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.iorapd.enable=true
+
 # Keymaster 4.0 - TDES support
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore_desede=true
