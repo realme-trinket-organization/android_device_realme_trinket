@@ -56,6 +56,10 @@ public class RealmeParts extends PreferenceFragment
 
     private static TwoStatePreference mOTGModeSwitch;
 
+    public static final String PREF_USB_FASTCHARGE = "fastcharge";
+    public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
+    private SwitchPreference mUsbFastCharger;
+
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.main);
@@ -77,6 +81,15 @@ public class RealmeParts extends PreferenceFragment
         mOTGModeSwitch.setEnabled(OTGModeSwitch.isSupported());
         mOTGModeSwitch.setChecked(OTGModeSwitch.isCurrentlyEnabled(this.getContext()));
         mOTGModeSwitch.setOnPreferenceChangeListener(new OTGModeSwitch());
+
+        if (FileUtils.fileWritable(USB_FASTCHARGE_PATH)) {
+            mUsbFastCharger = findPreference(PREF_USB_FASTCHARGE);
+            mUsbFastCharger.setEnabled(UsbFastCharge.isSupported());
+            mUsbFastCharger.setChecked(UsbFastCharge.isCurrentlyEnabled(this.getContext()));
+            mUsbFastCharger.setOnPreferenceChangeListener(new UsbFastCharge(getContext()));
+        } else {
+            getPreferenceScreen().removePreference(findPreference(PREF_USB_FASTCHARGE));
+        }
     }
 
     @Override

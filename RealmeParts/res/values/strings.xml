@@ -85,4 +85,9 @@
     <!-- FPS Counter -->
     <string name="fps_info_title">FPS Counter</string>
 
+    <!-- USB fastcharge -->
+    <string name="fastcharge_control">USB Fastcharge Control</string>
+    <string name="fastcharge_title">Enable USB Fastcharge</string>
+    <string name="fastcharge_summary">Charge upto 900mA when connected to a computer via USB 3.0 port</string>
+
 </resources>
