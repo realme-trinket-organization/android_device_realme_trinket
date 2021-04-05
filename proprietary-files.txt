@@ -3058,8 +3058,8 @@ vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
 vendor/firmware/ipa_fws.mdt|116fc3a6bd0dcd653cd62e118765ec79da50b624
 vendor/firmware/ipa_fws.elf|cd373207d6914af1e2fb9718206939fa7e839e6c
 
-# IRQ balance
-vendor/bin/msm_irqbalance
+# IRQ balance - from LA.UM.9.11.r1-04500-NICOBAR.0
+vendor/bin/msm_irqbalance|b075c2f4092c175950a2c26d19bf2013e2efd6d5
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
@@ -3171,6 +3171,12 @@ vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|35e6fd568a2752b40264545
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|902f68c51f0b1963a5da1815e6fde1d44ff2ea00
 vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|77199c0e175061bfe1b2b973b1e01806fa696d73
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|90e4b6fb3d35d5a141000e9f9f29be7149720280
+
+# Perf - from LA.UM.9.11.r1-04500-NICOBAR.0
+vendor/lib64/libadaptlaunch.so|610d4811b6d5e2d76487a83d75ab3614985eb362
+vendor/lib64/libappclassifier.so|c7ebdc7b644fdcb58fa3acceb6d683b157114f1a
+vendor/lib64/libgameoptfeature.so|e9b0b552cc316ba80376db60bea9894ae3be4cfe
+vendor/lib64/liblearningmodule.so|64cc743d9a4fc0eb425a34fbbb1faf424e09e5b4
 
 # Peripheral manager
 vendor/bin/pm-proxy
