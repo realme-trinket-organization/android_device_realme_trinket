@@ -268,7 +268,6 @@ PRODUCT_PACKAGES += \
     init.oppo.face.sh \
     init.oppo.fingerprints.rc \
     init.oppo.fingerprints.sh \
-    init.oppo.product.rc \
     init.oppo.reserve.rc \
     init.msm.usb.configfs.rc \
     init.qcom.early_boot.sh \
