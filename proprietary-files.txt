@@ -3000,6 +3000,10 @@ vendor/lib/libtinyxml2_1.so
 vendor/lib64/hw/vulkan.trinket.so
 vendor/lib/hw/vulkan.trinket.so
 
+# Health
+vendor/bin/hw/android.hardware.health@2.0-service.oppo
+vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
+
 # IPA
 vendor/firmware/ipa_fws.b00
 vendor/firmware/ipa_fws.b01
