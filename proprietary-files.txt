@@ -3062,64 +3062,90 @@ vendor/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
 vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
 vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
 
-# Pasrmanager
-vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
-vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
-vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib/vendor.qti.power.pasrmanager@1.0.so
-vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so
-vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
+# PASR Manager - from LA.UM.9.11.r1-03200-NICOBAR.0
+-vendor/app/pasrservice/pasrservice.apk|6d4e8bab2426b03231531ec09bce922601b8e8e6
+vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service|c3ff775c61df0a55186723080db7d136431dcc31
+vendor/lib/hw/vendor.qti.power.pasrmanager@1.0-impl.so|52826507ad59f073aa5389c9345ce655f307a8be
+vendor/lib/vendor.qti.memory.pasrmanager@1.0.so|520cab455c55ca8968ff0f5c386b201401dd0cec
+vendor/lib/vendor.qti.memory.pasrmanager@1.1.so|07543b4217b1ddcde551e4241cb503b416879237
+vendor/lib/vendor.qti.power.pasrmanager@1.0.so|a706fb4ffc5b2b35a1d2eb07c3b600350e9c5d19
+vendor/lib64/hw/vendor.qti.power.pasrmanager@1.0-impl.so|35e6fd568a2752b402645452f0aa528d2b5b0982
+vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so|902f68c51f0b1963a5da1815e6fde1d44ff2ea00
+vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|77199c0e175061bfe1b2b973b1e01806fa696d73
+vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|90e4b6fb3d35d5a141000e9f9f29be7149720280
 
-# Perf
-vendor/bin/hw/vendor.qti.hardware.perf@2.0-service
-vendor/bin/msm_irqbalance
-vendor/etc/init/vendor.qti.hardware.perf@2.0-service.rc
-vendor/etc/perf/commonresourceconfigs.xml
-vendor/etc/perf/perfboostsconfig.xml
-vendor/etc/perf/perfconfigstore.xml
-vendor/etc/perf/targetconfig.xml
-vendor/etc/perf/targetresourceconfigs.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib64/libperfconfig.so
-vendor/lib64/libperfgluelayer.so
-vendor/lib64/libqti-perfd-client.so
-vendor/lib64/libqti-perfd.so
-vendor/lib64/libqti-util.so
-
-# Perf-IOP
-product/lib/vendor.qti.hardware.iop@2.0.so
-product/lib64/vendor.qti.hardware.iop@2.0.so
-vendor/lib/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-iopd.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
-vendor/lib64/hw/vendor.qti.hardware.iop@2.0-impl.so
-vendor/lib64/libqti-iopd-client.so
-vendor/lib64/libqti-iopd.so
-vendor/lib64/vendor.qti.hardware.iop@1.0.so
-vendor/lib64/vendor.qti.hardware.iop@2.0.so
+# Performance - from LA.UM.9.11.r1-03200-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|d7d6275ac24fe256d7659ae04d543c9fd3cb18b1
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|83bf6a918a8c7d4f7bd68648b89845021818d40c
+vendor/bin/msm_irqbalance|e5706bc0acab394b53fafdc1d7f342f69c6f5649
+vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc|fd11367b2585702190ef2577ce2ce6fc68f3a2f8
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc|459b4c23550a56ac545f78c6d391f3d7dd9ba45b
+vendor/etc/lm/AdaptLaunchFeature.xml|ad4516342729e79a8914762c2737f7faa08b1e9d
+vendor/etc/lm/AppClassifierFeature.xml|69baba75bf7880a3bac99a9aefa2f97a047e9eea
+vendor/etc/lm/GameOptimizationFeature.xml|fd1e0dcf30bcc65d9705ba0caf1afe97680e83a7
+vendor/lib/libperfconfig.so|0010c702d27b32eb90c0cf2aa5be824c3fb63d12
+vendor/lib/libperfgluelayer.so|6252c38cfdc042c312210aa6dde4732381a79587
+vendor/lib/libperfioctl.so|5d1da18ae6860f6c4e185df679bec91ba772d331
+vendor/lib/libqti-iopd.so|b05391adec0d3659b390278ba674b3e17f70ff94
+vendor/lib/libqti-iopd-client.so|7ce1fb3256642e8ce2303e66f8224fe52c64c62c
+vendor/lib/libqti-perfd.so|105adade4c0253133f73ce55ead7e6af6ad7ed80
+vendor/lib/libqti-perfd-client.so|35c5fb10e0dfc1302460200f7757c3329eb42280
+vendor/lib/libqti-util.so|7f6c5badab6ea436f945adecf0fc56a03b610aed
+vendor/lib/libqti-utils.so|5809afa83fb7798a6f7039ed83232bd8df8499c3
+vendor/lib/libskewknob.so|4b36b738226d8ccb831818ab0915d2a4b00eca86
+vendor/lib/vendor.qti.hardware.iop@1.0.so|db03e5418694856f044130fa2d43e281ef2aca6d
+vendor/lib/vendor.qti.hardware.iop@2.0.so|6a580961bb5011e153e74854a28b89e9d12a6e14
+vendor/lib64/libadaptlaunch.so|af52985a252073c9c00feb45e1e9554570c7dc8d
+vendor/lib64/libappclassifier.so|4cf1cb931d77799aac96d37c944e9edbeec83bb2
+vendor/lib64/libgameoptfeature.so|2c818b425c3fc05fdac0e044a57a9686b4d68a37
+vendor/lib64/liblearningmodule.so|6d2ce4ba8704f3e35bd003ece0f2e6fdda952637
+vendor/lib64/libmemperfd.so|174a2be04cd1317b010b4dbe050d0147a51915c7
+vendor/lib64/libmeters.so|90c9074d241730f92f37524181443faf54e601a0
+vendor/lib64/libmeters-ns.so|728f8fbf21a800a23fa0314d0a960c5b2fbdbb68
+vendor/lib64/liblmutils-ns.so|0c9410afbd5b89c446a4a6b5da362b10b370fc0f
+vendor/lib64/libperfconfig.so|e15adf22e00b955bdfb26f1ab262f812e7298a2a
+vendor/lib64/libperfgluelayer.so|ffab1f50f417eba675b4df8eb24ea5a16b7f8912
+vendor/lib64/libperfioctl.so|6f7908a64d3047f21b93577f88f5c9eeef6e7762
+vendor/lib64/libprekill.so|3ae4f9895601aafe4ed9d16a09d17e80a06679ee
+vendor/lib64/libqti-iopd.so|fba5cc88d8ad40d94b14d474991306afe9fee206
+vendor/lib64/libqti-iopd-client.so|2628499e2d7d723bfea18edfc7bb8f5444c97f35
+vendor/lib64/libqti-perfd.so|9505be91a1a584218ba8e48bad480ec6b4b23bbe
+vendor/lib64/libqti-perfd-client.so|519410e9aa770e3b6bed092dcf9fa9383b77cc01
+vendor/lib64/libqti-util.so|52421189f8f69fe1a841acc2d9d4c29c768fcd51
+vendor/lib64/libqti-utils.so|423a983b8cc8415e3eeef635b11a7f309f570f51
+vendor/lib64/libreffeature.so|1e79661210358fed0213637389011d2c8f0d7763
+vendor/lib64/libskewknob.so|bc76a05d7ea41c4f35b1dba47e9c66321654023e
+vendor/lib64/vendor.qti.hardware.iop@1.0.so|7cf6226b395affc0a7c887d406209e37c9a30acb
+vendor/lib64/vendor.qti.hardware.iop@2.0.so|b0fb916690a472a9c41ed8a9e4639820e7f83a29
 
 # Peripheral manager
 vendor/bin/pm-proxy
 vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so
 
-# Postprocessing
-vendor/bin/hw/vendor.display.color@1.0-service
-vendor/etc/init/vendor.display.color@1.0-service.rc
-vendor/lib64/libdisp-aba.so
-vendor/lib64/libdpps.so
-vendor/lib64/libdisplayqos.so
-vendor/lib64/vendor.display.color@1.0.so
-vendor/lib64/vendor.display.color@1.1.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.color@1.3.so
-vendor/lib64/vendor.display.postproc@1.0.so
+# Postprocessing - from LA.UM.9.11.r1-03200-NICOBAR.0
+product/etc/permissions/com.qti.snapdragon.sdk.display.xml|4c71d110023088c6ea8072227c714416e2792d75
+-product/framework/com.qti.snapdragon.sdk.display.jar|176d711c7d2aa5c95c8ecb42fec8a29158247ea3
+-system_ext/app/colorservice/colorservice.apk|cbee68aee112b3ac93bddf278e4b0698df2b14f1
+system_ext/lib/libsd_sdk_display.qti.so|ec13048b87b5e5898a45455a032edbe7d36fb902
+system_ext/lib/libsdm-disp-apis.qti.so|2edb0d1e1f9983b75e11b752e2d43275984caca9
+system_ext/lib64/libsd_sdk_display.qti.so|a4201b710caf227b5b93c0b8cd8f02904ec8c24a
+system_ext/lib64/libsdm-disp-apis.qti.so|6606e07ca39d087dff2fed998c749b29c7585cee
+vendor/bin/hw/vendor.display.color@1.0-service|ce61a8290f57c5d759280038e6cfd3f7db887269
+vendor/bin/ppd|a4ece99b04a9d66b5f96771511c5a40dc089af84
+vendor/bin/qdcmss|f9ec0e758dcfddbac0a8ce5748b106b2ab091a17
+vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib/vendor.display.color@1.0.so|080d62ec8813482a9a49bb875cd3c09b9a7d7406
+vendor/lib/vendor.display.color@1.1.so|a90fdba3b696f889346cd49f6b125199405fa931
+vendor/lib/vendor.display.color@1.2.so|2f58efe8909ad5dd51306211dec2ff2eda4aefd6
+vendor/lib/vendor.display.color@1.3.so|c57cf51e76ab59370c8755a70c2b505f8e5b0ba2
+vendor/lib/vendor.display.postproc@1.0.so|3a8a4d20666c62ab0547f0b947718ca4ce65cd7f
+vendor/lib64/vendor.display.color@1.0.so|0d5948db7f32a9a799ab2fbf136c568ab2fce366
+vendor/lib64/vendor.display.color@1.1.so|4665050e8f509b49c56a378e8ca40df6641815d8
+vendor/lib64/vendor.display.color@1.2.so|1d4ed0df3fcb207a3ff184ad63d45de785075aad
+vendor/lib64/vendor.display.color@1.3.so|27837f9b11dd381d33de00f7e13baeac9fe86961
+vendor/lib64/vendor.display.postproc@1.0.so|1b1823653b06109b5ade5cc4e520464911b1e1da
 
 # Qualcomm MSM Interface
 etc/permissions/qti_libpermissions.xml
