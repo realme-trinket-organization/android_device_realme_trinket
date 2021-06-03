@@ -3151,6 +3151,14 @@ vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
 vendor/lib/vendor.qti.hardware.vpp@1.3.so
 
+# Oppo (mmdisplay)
+vendor/bin/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-service
+vendor/etc/init/vendor.oppo.hardware.mmdisplayfeature@1.0-service.rc
+vendor/lib/vendor.oppo.hardware.mmdisplayfeature@1.0.so
+vendor/lib/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
+vendor/lib64/vendor.oppo.hardware.mmdisplayfeature@1.0.so
+vendor/lib64/hw/vendor.oppo.hardware.mmdisplayfeature@1.0-impl.so
+
 # Pasrmanager
 vendor/bin/hw/vendor.qti.power.pasrmanager@1.0-service
 vendor/etc/init/vendor.qti.power.pasrmanager@1.0-service.rc
