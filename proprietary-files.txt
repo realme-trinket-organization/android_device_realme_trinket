@@ -215,7 +215,6 @@ vendor/lib/libarcvs.dep.so
 vendor/lib/libarcvs.so
 vendor/lib/libblur_channel.so
 vendor/lib/libc++_shared.so
-vendor/lib/libcamera2ndk_vendor.so
 vendor/lib/libcamera_core_hwi.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libcapiv2vop.so
@@ -269,7 +268,6 @@ vendor/lib/libVDPostureDetection.so
 vendor/lib/libVDSuperPhotoAPI.so
 vendor/lib/libvideoutils.so
 vendor/lib64/libalgo.public.so
-vendor/lib64/libcamera2ndk_vendor.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libDxHdcp.so
@@ -2399,9 +2397,6 @@ vendor/firmware/cpp_firmware_v1_8_0.fw
 # Camera-ois
 vendor/lib/libois_bu63165.so
 vendor/lib/libois_lc898122.so
-
-# Camera-provider
-vendor/bin/hw/android.hardware.camera.provider@2.4-service
 
 # Camera-sensors
 vendor/lib/libmmcamera2_c2d_module.so
