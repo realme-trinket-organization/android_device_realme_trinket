@@ -30,3 +30,6 @@ PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := lineage_realme_trinket
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+# Time
+LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
