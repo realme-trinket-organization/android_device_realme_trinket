@@ -70,6 +70,15 @@ function blob_fixup() {
         sed -i 's/xml version="2.0"/xml version="1.0"/' "${2}"
         ;;
 
+    # Rename Fingerprint Blobs For RMX2030
+    vendor/bin/hw/android.hardware.fingerprint@2.1-service-RMX2030)
+        "${PATCHELF}" --set-soname "android.hardware.biometrics.fingerprint@2.1-service-RMX2030" "${2}"
+        ;;
+    vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-RMX2030.rc)
+        sed -i 's/ets_hal/egis_hal/' "${2}"
+        sed -i 's/-rbs/-RMX2030/' "${2}"
+        ;;
+
     esac
 }
 
