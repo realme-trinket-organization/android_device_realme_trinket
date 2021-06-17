@@ -2974,47 +2974,29 @@ vendor/lib64/libsdm-disp-vndapis.so|9ab6725a5efba29b77d1d6ab33e10e3ff3296960
 vendor/lib64/libsdmextension.so|3f1d81e0025de6721ed45697bf97003dd57b2847
 vendor/lib64/libtinyxml2_1.so|92101861d95cbdf9625d192d0b2295baa5960b68
 
-# Graphics (Firmware)
-vendor/firmware/a225_pfp.fw
-vendor/firmware/a225_pm4.fw
-vendor/firmware/a225p5_pm4.fw
-vendor/firmware/a300_pfp.fw
-vendor/firmware/a300_pm4.fw
-vendor/firmware/a330_pfp.fw
-vendor/firmware/a330_pm4.fw
-vendor/firmware/a420_pfp.fw
-vendor/firmware/a420_pm4.fw
-vendor/firmware/a530_gpmu.fw2
-vendor/firmware/a530_pfp.fw
-vendor/firmware/a530_pm4.fw
-vendor/firmware/a530v1_pfp.fw
-vendor/firmware/a530v1_pm4.fw
-vendor/firmware/a530v2_seq.fw2
-vendor/firmware/a530v3_gpmu.fw2
-vendor/firmware/a530v3_seq.fw2
-vendor/firmware/a540_gpmu.fw2
-vendor/firmware/a610_zap.b00
-vendor/firmware/a610_zap.b01
-vendor/firmware/a610_zap.b02
-vendor/firmware/a610_zap.elf
-vendor/firmware/a610_zap.mdt
-vendor/firmware/a612_rgmu.bin
-vendor/firmware/a630_gmu.bin
-vendor/firmware/a630_sqe.fw
-vendor/firmware/a640_gmu.bin
+# Graphics (Firmware) - from RMX2050EX_11_OTA_10100270_all_RxA1Xl2mWduR_6ffaac
+vendor/firmware/a610_zap.b00|cdc0262ea8bc3fa3796be6150cd5430abeeeab8d
+vendor/firmware/a610_zap.b01|0e5c789044c4197958d9a4c92ca90526b2db4c65
+vendor/firmware/a610_zap.b02|a29356777d8a39fde907ee051a8a2fd1eea28c23
+vendor/firmware/a610_zap.elf|dbcb058c99d7cababd95b45b9a306f3272c90f2c
+vendor/firmware/a610_zap.mdt|274e6a571cd2b6a78938eb1487444d15392bc1fb
+vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|e25094f97b44244775cc38a9d909fba6bd4cf76b
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
 
 # Health
 vendor/bin/hw/android.hardware.health@2.0-service.oppo
 vendor/etc/init/android.hardware.health@2.0-service.oppo.rc
 
-# IPA
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.mdt
-vendor/firmware/ipa_fws.elf
+# IPA - from RMX2050EX_11_OTA_10100270_all_RxA1Xl2mWduR_6ffaac
+vendor/firmware/ipa_fws.b00|aade3e72dc69e9649b73fa9363985c0997437854
+vendor/firmware/ipa_fws.b01|57e2e1513d143319fa820035aa9f597ce46eb730
+vendor/firmware/ipa_fws.b02|a4f15a2345382514ef64d40f58dbaa3f1e35c4e7
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.mdt|116fc3a6bd0dcd653cd62e118765ec79da50b624
+vendor/firmware/ipa_fws.elf|cd373207d6914af1e2fb9718206939fa7e839e6c
 
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
