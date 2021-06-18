@@ -2764,42 +2764,51 @@ vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml
 vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml
 
-# DRM
-vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
-vendor/lib64/libGPreqcancel.so
-vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libQSEEComAPI.so
-vendor/lib64/libSecureUILib.so
-vendor/lib64/libStDrvInt.so
-vendor/lib64/libdrmfs.so
-vendor/lib64/libdrmtime.so
-vendor/lib64/libqisl.so
-vendor/lib64/librpmb.so
-vendor/lib64/libsecureui.so
-vendor/lib64/libsecureui_svcsock.so
-vendor/lib64/libsi.so
-vendor/lib64/libssd.so
-vendor/lib/libQSEEComAPI.so
-vendor/lib/libcpion.so
-vendor/lib/libdrmfs.so
+# DRM - from LA.UM.9.11.r1-03900-NICOBAR.0
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|d3d6ed383483747f8bec574adcac1c24ef1ac3a4
+vendor/bin/qseecomd|f5428047d1a0aabf7cf2200229a1a03f224ee4e6
+vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
+vendor/etc/init/qseecomd.rc|932a237cdf72ed47226bffc115bbdc6ef57e510b
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|19865ff6ae05f9b95722000986dcd976fd74d8b4
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|9186c166cf0dcfe021479198f01e65dd2dcd9df1
+vendor/lib64/libGPreqcancel.so|b9efbc8623981e1249ad0a0f8964b2b655d2b334
+vendor/lib64/libGPreqcancel_svc.so|ad933d6f9d24b0808725c33995f6e44688274974
+vendor/lib64/libQSEEComAPI.so|05ef951b2fb7ea8f22968b6adbaa6ce0f8f510f5
+vendor/lib64/libSecureUILib.so|838ae79979b398c70e3341ea1defcd03241c005e
+vendor/lib64/libStDrvInt.so|bbd98bd9ebcf4022876ec117f83c65fc1a177f07
+vendor/lib64/libbase64.so|69ea4a86fbc5a26ab3ec46b3bcb6ab65b75ce07c
+vendor/lib64/libcpion.so|3547ee6e05d1506fe1467762aad640a5866d6075
+vendor/lib64/libdrmfs.so|db2c3188565b5adb2023f977cb27a5d5f30454bf
+vendor/lib64/libdrmtime.so|064bbba75c82d0a3426624e5a2792f73572818f6
+vendor/lib64/libops.so|384115d71caf13bff879c66797c786a4f6b8a636
+vendor/lib64/libpvr.so|9a510d5e99c42e119759c37b48a5d244c2f8e51c
+vendor/lib64/libqisl.so|c79719eebc094c2af9561e8df2c158638b111b70
+vendor/lib64/librmp.so|616f942edc7f69876bac486782e366cc34276b3f
+vendor/lib64/librpmb.so|f191e46026c9495207b16ab4d2bad9aa88a1dcd0
+vendor/lib64/libsecureui.so|80650ed93443df97db41b91ccad55176350f6cfd
+vendor/lib64/libsecureui_svcsock.so|d7f2a4e6fe9d9401f309e4dc3c0796c80bae1e96
+vendor/lib64/libsi.so|ed75ce7d2408e0b0c268b281c63f578713a42fe5
+vendor/lib64/libssd.so|ad3ccaeab10635594f64602a69265a1d02a9be8f
+vendor/lib64/libtrustedapploader.so|25d17a1b9e87562a8b1c6167b48d8ab283736354
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|ac913be657a31fd421da00825ef9900bf82cd6f6
 
-# DRM - Widevine
-vendor/bin/hw/android.hardware.drm@1.2-service.widevine
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
-vendor/lib64/libbase64.so
-vendor/lib64/libcpion.so
-vendor/lib64/librmp.so
-vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib/libbase64.so
-vendor/lib/libcppf.so
-vendor/lib/librmp.so
-vendor/lib/mediadrm/libwvdrmengine.so
+# DRM - Widevine - from ginkgo MIUI V12.0.3.0.RCOCNXM
+vendor/bin/hw/android.hardware.drm@1.3-service.widevine|75103a18355966370895526dc9afb6adff4b755b
+vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff19064a81e07c4be82ceaf4bb5
+-vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/lib64/libwvhidl.so|fb8088d4a47b7a3918c798c58e1636c10bce3427
+vendor/lib64/mediadrm/libwvdrmengine.so|1c09274f43d0028a8ef56b35013b5768aae62c6d
 
-# DRM - Widevine L1 - from laurel_sprout V11.0.17.0.QFQMIXM
-vendor/lib64/liboemcrypto.so|14289b52bddd8d5ad100452c475cf4cbedca67cb
-vendor/lib/liboemcrypto.so|822a8413aa5229e66b090113295f79d6839c004f
-vendor/lib/libwvhidl.so|aaee55dbe013214b53313a2153d4990478a4ee17
+# DRM - Widevine L1 - from ginkgo MIUI V12.0.3.0.RCOCNXM
+modem/image/widevine.b00:vendor/firmware/widevine.b00|02440d68e90e2606978d705a6de0aca576be6e66
+modem/image/widevine.b01:vendor/firmware/widevine.b01|dd2f1f6670a27c00384bd40595e36d741eb88f71
+modem/image/widevine.b02:vendor/firmware/widevine.b02|0c6041480787fff2f7f79782bc180c5e0e391126
+modem/image/widevine.b03:vendor/firmware/widevine.b03|86eb9c5b5ef411f1de65efeab8571bf996088840
+modem/image/widevine.b04:vendor/firmware/widevine.b04|8418e1096d854bc0f91c2fed02aba8237cea1afb
+modem/image/widevine.b05:vendor/firmware/widevine.b05|14e522435fe75b168168e7e5dc4aa6cad0d753a1
+modem/image/widevine.b06:vendor/firmware/widevine.b06|1f8cbb03036616214eb01bdaf9cc04e6ac0af8bc
+modem/image/widevine.b07:vendor/firmware/widevine.b07|c6fb2f2db136ce0bf45bd53dd9bde0287d936429
+modem/image/widevine.mdt:vendor/firmware/widevine.mdt|d344a570d06a7a3b2610b3ec9e6642629ce97f49
 
 # Face recognition firmware
 vendor/firmware/facereg.b00
