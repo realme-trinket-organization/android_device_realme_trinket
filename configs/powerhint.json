@@ -124,6 +124,15 @@
             "ResetOnInit": true
         },
         {
+            "Name": "EnergyAware",
+            "Path": "/proc/sys/kernel/sched_energy_aware",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "ResetOnInit": true
+        },
+        {
             "Name": "CPUBWHystTriggerCount",
             "Path": "/sys/class/devfreq/soc:qcom,cpu-cpu-ddr-bw/bw_hwmon/hyst_trigger_count",
             "Values": [
@@ -295,6 +304,12 @@
             "Node": "CPUBWMinFreq",
             "Duration": 100,
             "Value": "4577"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "EnergyAware",
+            "Duration": 2500,
+            "Value": "0"
         },
         {
             "PowerHint": "LAUNCH",
