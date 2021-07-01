@@ -264,6 +264,13 @@ on boot
 
 # msm specific files that need to be created on /data
 on post-fs-data
+    # NFC
+    mkdir /data/vendor 0777 nfc nfc
+    mkdir /data/vendor/nfc 0777 nfc nfc
+    mkdir /data/vendor/nfc/param 0777 nfc nfc
+    chmod 0660 /dev/pn553
+    chown nfc nfc /dev/pn553
+
     mkdir /data/vendor/misc 01771 system system
 
     # Create directory used for dump collection
@@ -479,6 +486,17 @@ service nqnfcinfo /system/vendor/bin/nqnfcinfo
     group nfc
     user system
     oneshot
+    disabled
+
+service nqnfc_2_0_hal_service /vendor/bin/hw/vendor.nxp.hardware.nfc@2.0-service
+    class hal
+    user nfc
+    group nfc
+    override
+    disabled
+
+on property:ro.product.device=RMX1927
+    enable nqnfc_2_0_hal_service
 
 service iop /system/vendor/bin/iop
     class main
