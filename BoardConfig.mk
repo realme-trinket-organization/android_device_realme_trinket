@@ -22,7 +22,9 @@
 # definition file).
 #
 
-COMMON_PATH := device/realme/sm6125-common
+DEVICE_PATH := device/realme/realme_trinket
+
+BUILD_BROKEN_DUP_RULES := true
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := trinket
@@ -30,6 +32,9 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := trinket
+
+# Assert
+TARGET_OTA_ASSERT_DEVICE := RMX1911,RMX1925
 
 # Architecture
 TARGET_ARCH := arm64
@@ -46,6 +51,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
+# Display
+TARGET_SCREEN_DENSITY := 320
+
 # Kernel
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 msm_rtb.filter=0x237 service_locator.enable=1 swiotlb=1 earlycon=msm_geni_serial,0x4a90000 loop.max_part=7 cgroup.memory=nokmem,nosocket
@@ -56,14 +64,15 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
-TARGET_KERNEL_SOURCE := kernel/realme/sm6125
+TARGET_KERNEL_SOURCE := kernel/realme/realme_trinket
+TARGET_KERNEL_CONFIG := vendor/RMX1911_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
 # Assert
-TARGET_BOARD_INFO_FILE := $(COMMON_PATH)/board-info.txt
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
@@ -77,7 +86,7 @@ AUDIO_FEATURE_ENABLED_GEF_SUPPORT := true
 AUDIO_FEATURE_ENABLED_FM_POWER_OPT := true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Camera
 TARGET_USES_QTI_CAMERA_DEVICE := true
@@ -102,11 +111,11 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/manifests/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/manifests/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/manifests/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/manifests/compatibility_matrix.xml
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_trinket
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_trinket
 TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
 
 # Keystore
@@ -119,6 +128,8 @@ TARGET_DISABLED_UBWC := true
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
+BOARD_VENDORIMAGE_PARTITION_SIZE := 1073741824
 BOARD_METADATAIMAGE_PARTITION_SIZE := 16777216
 ifneq ($(AB_OTA_UPDATER), true)
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -135,12 +146,13 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/bt_firmware:/bt_firmware
 
 TARGET_COPY_OUT_VENDOR := vendor
+TARGET_COPY_OUT_ODM := vendor/odm
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
 BOARD_USES_METADATA_PARTITION := true
 
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/config.fs
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
@@ -149,17 +161,20 @@ TARGET_USES_INTERACTION_BOOST := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
 # Releasetools
 TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_realme_trinket
-TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2020-11-05
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/public
-BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+BOARD_PLAT_PUBLIC_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/public
+BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(DEVICE_PATH)/sepolicy/private
 
 # Treble
 BOARD_VNDK_VERSION := current
@@ -186,4 +201,4 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
-include vendor/realme/sm6125-common/BoardConfigVendor.mk
+include vendor/realme/realme_trinket/BoardConfigVendor.mk

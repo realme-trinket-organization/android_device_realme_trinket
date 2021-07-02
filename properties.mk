@@ -34,7 +34,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.af.client_heap_size_kbyte=7168 \
     vendor.audio.volume.headset.gain.depcal=true \
     persist.vendor.bt.aac_frm_ctl.enabled=true \
-    vendor.audio.spkr_prot.tx.sampling_rate=48000
+    vendor.audio.spkr_prot.tx.sampling_rate=48000 \
+    vendor.audio.feature.compr_voip.enable=false
 
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.feature.afe_proxy.enable=true \

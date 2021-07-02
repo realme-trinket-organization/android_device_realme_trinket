@@ -35,6 +35,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
 
+# Bootanimation
+TARGET_SCREEN_HEIGHT := 1600
+TARGET_SCREEN_WIDTH := 720
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:system/etc/permissions/privapp-permissions-qti.xml
@@ -155,6 +159,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5 \
     libdng_sdk.vendor \
+    libstdc++.vendor \
     vendor.qti.hardware.camera.device@1.0 \
     vendor.qti.hardware.camera.device@1.0.vendor
 
@@ -446,4 +451,4 @@ PRODUCT_BOOT_JARS += \
     WfdCommon
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/realme/sm6125-common/sm6125-common-vendor.mk)
+$(call inherit-product, vendor/realme/realme_trinket/realme_trinket-vendor.mk)
