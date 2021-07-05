@@ -3676,6 +3676,13 @@ vendor/bin/thermal-engine
 -vendor/lib/libthermalclient.so
 vendor/lib64/libthermalfeature.so
 
+# Thermal - laurel_sprout V11.0.22.0.QFQMIXM
+vendor/etc/thermal-engine-high.conf
+vendor/etc/thermal-engine-map.conf
+vendor/etc/thermal-engine-nolimits.conf
+vendor/etc/thermal-engine-normal.conf
+vendor/etc/thermal-engine.conf
+
 # Time services
 -vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
