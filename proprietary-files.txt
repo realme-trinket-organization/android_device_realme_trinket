@@ -2821,6 +2821,30 @@ vendor/firmware/facereg.b06
 vendor/firmware/facereg.b07
 vendor/firmware/facereg.mdt
 
+# Fingerprint
+vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service
+vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc
+vendor/lib/librpmbengclient.so
+vendor/lib/vendor.oppo.hardware.commondcs@1.0.so
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/android.frameworks.fingerprintservice@1.0.so
+vendor/lib64/librpmbengclient.so
+vendor/lib64/libRbsFlow.so
+vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
+vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
+# Fingerprint firmware
+vendor/firmware/f_1511.b00
+vendor/firmware/f_1511.b01
+vendor/firmware/f_1511.b02
+vendor/firmware/f_1511.b03
+vendor/firmware/f_1511.b04
+vendor/firmware/f_1511.b05
+vendor/firmware/f_1511.b06
+vendor/firmware/f_1511.b07
+vendor/firmware/f_1511.mdt
+
 # FM
 lib64/fm_helium.so
 lib64/libfm-hci.so
