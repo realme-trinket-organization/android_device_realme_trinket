@@ -65,12 +65,12 @@ function blob_fixup() {
         ;;
 
     # Rename Fingerprint Blobs For RMX2030
-    vendor/bin/hw/android.hardware.fingerprint@2.1-service-RMX2030)
-        "${PATCHELF}" --set-soname "android.hardware.biometrics.fingerprint@2.1-service-RMX2030" "${2}"
+    odm/bin/hw/android.hardware.fingerprint@2.1-service.realme_trinket)
+        "${PATCHELF}" --set-soname "android.hardware.biometrics.fingerprint@2.1-service.realme_trinket" "${2}"
         ;;
-    vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-RMX2030.rc)
+    odm/etc/init/android.hardware.biometrics.fingerprint@2.1-service.realme_trinket.rc)
         sed -i 's/ets_hal/egis_hal/' "${2}"
-        sed -i 's/-rbs/-RMX2030/' "${2}"
+        sed -i 's/-rbs/.realme_trinket/' "${2}"
         ;;
 
     esac

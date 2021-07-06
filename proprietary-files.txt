@@ -2834,6 +2834,24 @@ vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so
 vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Fingerprint - from motorola/troika_retail/troika_sprout:10/QSBS30.62-17-17-7/6755b:user/release-keys
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-rbs:odm/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_trinket|ad879e7ed06f50c804e79fb9312614c4fdef49e5
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-rbs.rc:odm/etc/init/android.hardware.biometrics.fingerprint@2.1-service.realme_trinket.rc|f4b3c2ba95d88d4c95eea6539f5a00820a8da3c3
+
+# Fingerprint - from RMX2030EX_11_A.19
+vendor/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service:odm/bin/hw/vendor.oppo.hardware.biometrics.fingerprint@2.1-service|36f15f53db8aa8c10898f8ff063e687b9501287c
+vendor/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc:odm/etc/init/vendor.oppo.hardware.biometrics.fingerprint@2.1-service.rc|85928aca3e8473d43214e0cb0ae2f1bbae5771ea
+vendor/etc/permissions/com.fingerprints.extension.xml:odm/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75a204e8928f9c6d
+vendor/lib/vendor.oppo.hardware.commondcs@1.0.so:odm/lib/vendor.oppo.hardware.commondcs@1.0.so|3a0dbc21f6f83578d63cf167017ffa482cd8701e
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:odm/lib/vendor.qti.hardware.fingerprint@1.0.so|30ab4c608a2ea0edecf4cbdcc12a22382b499333
+vendor/lib64/android.frameworks.fingerprintservice@1.0.so:odm/lib64/android.frameworks.fingerprintservice@1.0.so|1f461147918ca3c34cdff62c6f107e74e7e5e089
+vendor/lib64/libRbsFlow.so:odm/lib64/libRbsFlow.so|a13c1e99f5a3ee42ae4d7f41952dde77386dbebd
+vendor/lib64/vendor.egistec.hardware.fingerprint@4.0.so:odm/lib64/vendor.egistec.hardware.fingerprint@4.0.so|3f556cd34df353f93664f0dadd895a7455cb04ce
+vendor/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so:odm/lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so|a36658c52583c7fa45dc775831a7af7c0f4d8ae3
+vendor/lib64/vendor.oppo.hardware.commondcs@1.0.so:odm/lib64/vendor.oppo.hardware.commondcs@1.0.so|2354d7615d4e6cf9bbe2f57d2b1c3ee894356a9d
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:odm/lib64/vendor.qti.hardware.fingerprint@1.0.so|b973dbd6e37f68b8b07b8b27904be29697ee24d7
+vendor/lib64/hw/libets_teeclient_v2.so:odm/lib64/hw/libets_teeclient_v2.so|43d9cbdec565d041b21409a055640cbeca48d311
+
 # Fingerprint firmware
 vendor/firmware/f_1511.b00
 vendor/firmware/f_1511.b01
@@ -2844,6 +2862,15 @@ vendor/firmware/f_1511.b05
 vendor/firmware/f_1511.b06
 vendor/firmware/f_1511.b07
 vendor/firmware/f_1511.mdt
+vendor/firmware/egista.b00
+vendor/firmware/egista.b01
+vendor/firmware/egista.b02
+vendor/firmware/egista.b03
+vendor/firmware/egista.b04
+vendor/firmware/egista.b05
+vendor/firmware/egista.b06
+vendor/firmware/egista.b07
+vendor/firmware/egista.mdt
 
 # FM
 lib64/fm_helium.so
@@ -3696,6 +3723,18 @@ vendor/firmware/tp/19631/RA105A004.ini
 vendor/firmware/tp/19631/nt_hlt_fw.bin
 vendor/firmware/tp/19631/nt_hlt_fw_signed.bin
 vendor/firmware/tp/19631/RA105A0.bin
+vendor/firmware/tp/19743/RA170A1.bin
+vendor/firmware/tp/19743/RA170A1.ini
+vendor/firmware/tp/19743/RA170X1.bin
+vendor/firmware/tp/19743/RA170X1.ini
+vendor/firmware/tp/19743/ilitek_fw_inx_signed.bin
+vendor/firmware/tp/19743/ilitek_fw_xlgg3_signed.bin
+vendor/firmware/tp/19743/nt_hlt_fw.bin
+vendor/firmware/tp/19743/nt_hlt_fw_mp.bin
+vendor/firmware/tp/19743/nt_hlt_fw_signed.bin
+vendor/firmware/tp/19743/nt_hltg_fw.bin
+vendor/firmware/tp/19743/nt_hltg_fw_mp.bin
+vendor/firmware/tp/19743/nt_hltg_fw_signed.bin
 
 # Trusted User Interface
 vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti
