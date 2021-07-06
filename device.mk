@@ -33,7 +33,9 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage/packages/apps/Snap
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES := $(LOCAL_PATH)
+PRODUCT_SOONG_NAMESPACES := \
+    $(LOCAL_PATH) \
+    vendor/nxp/opensource/pn5xx
 
 # Bootanimation
 TARGET_SCREEN_HEIGHT := 1600
@@ -308,6 +310,32 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml
+
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    com.nxp.nfc.nq \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default.hw \
+    NQNfcNci \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    Tag \
+    vendor.nxp.hardware.nfc@2.0-service
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    $(LOCAL_PATH)/configs/nfc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/com.nxp.mifare.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/android.hardware.nfc.hce.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/android.hardware.nfc.hcef.xml \
+    frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_19632/android.hardware.nfc.uicc.xml
 
 # OMX
 PRODUCT_PACKAGES += \

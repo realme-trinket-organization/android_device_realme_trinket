@@ -175,6 +175,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.netflix.bsp_rev=Q6125-17995-1
 
+# NFC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.se.type=HCE,UICC
+
 # OTG
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.oem.otg_support=true
