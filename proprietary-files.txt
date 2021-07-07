@@ -3175,6 +3175,8 @@ vendor/lib64/vendor.qti.memory.pasrmanager@1.1.so|77199c0e175061bfe1b2b973b1e018
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so|90e4b6fb3d35d5a141000e9f9f29be7149720280
 
 # Perf - from RMX2050EX_11_OTA_10100270_all_RxA1Xl2mWduR_6ffaac
+system_ext/lib/libbeluga.so|879ed469e4a98c6bd5d3379b9786e0f30b1518e1
+system_ext/lib64/libbeluga.so|2c327f37e9eebed975472adb37f62024cae24161
 vendor/bin/hw/vendor.qti.hardware.iop@2.0-service|f44b5e1dda355fe2f99ccaaf3860f4f443d38b22
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service|bcc0537ccf8e9c9b45c56d0f4b5da4064a5b6e4c
 vendor/bin/msm_irqbalance|c0910fb319bb8287f176f26078241299455baad0
