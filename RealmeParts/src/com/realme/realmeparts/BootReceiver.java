@@ -53,6 +53,8 @@ public class BootReceiver extends BroadcastReceiver implements Utils {
                     PREF_HUE, HUE_DEFAULT));
             FileUtils.setValue(RealmeParts.USB_FASTCHARGE_PATH, Settings.Secure.getInt(context.getContentResolver(),
                     RealmeParts.PREF_USB_FASTCHARGE, 1));
+            // Dirac
+            context.startService(new Intent(context, DiracService.class));
         }
     }
 }

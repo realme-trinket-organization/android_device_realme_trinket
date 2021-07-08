@@ -43,6 +43,9 @@ import androidx.preference.TwoStatePreference;
 import com.realme.realmeparts.kcal.KCalSettingsActivity;
 import com.realme.realmeparts.Constants;
 
+import com.realme.realmeparts.preferences.SecureSettingListPreference;
+import com.realme.realmeparts.preferences.SecureSettingSwitchPreference;
+
 public class RealmeParts extends PreferenceFragment
         implements Preference.OnPreferenceChangeListener {
 
@@ -59,6 +62,14 @@ public class RealmeParts extends PreferenceFragment
     public static final String PREF_USB_FASTCHARGE = "fastcharge";
     public static final String USB_FASTCHARGE_PATH = "/sys/kernel/fast_charge/force_fast_charge";
     private SwitchPreference mUsbFastCharger;
+
+    public static final String PREF_ENABLE_DIRAC = "dirac_enabled";
+    public static final String PREF_HEADSET = "dirac_headset_pref";
+    public static final String PREF_PRESET = "dirac_preset_pref";
+
+    private SecureSettingSwitchPreference mEnableDirac;
+    private SecureSettingListPreference mHeadsetType;
+    private SecureSettingListPreference mPreset;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -90,6 +101,30 @@ public class RealmeParts extends PreferenceFragment
         } else {
             getPreferenceScreen().removePreference(findPreference(PREF_USB_FASTCHARGE));
         }
+
+        boolean enhancerEnabled;
+        try {
+            enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
+        } catch (java.lang.NullPointerException e) {
+            getContext().startService(new Intent(getContext(), DiracService.class));
+            try {
+                enhancerEnabled = DiracService.sDiracUtils.isDiracEnabled();
+            } catch (NullPointerException ne) {
+                // Avoid crash
+                ne.printStackTrace();
+                enhancerEnabled = false;
+            }
+        }
+
+        mEnableDirac = (SecureSettingSwitchPreference) findPreference(PREF_ENABLE_DIRAC);
+        mEnableDirac.setOnPreferenceChangeListener(new DiracPrefs(getContext()));
+        mEnableDirac.setChecked(enhancerEnabled);
+
+        mHeadsetType = (SecureSettingListPreference) findPreference(PREF_HEADSET);
+        mHeadsetType.setOnPreferenceChangeListener(new DiracPrefs(getContext()));
+
+        mPreset = (SecureSettingListPreference) findPreference(PREF_PRESET);
+        mPreset.setOnPreferenceChangeListener(new DiracPrefs(getContext()));
     }
 
     @Override
