@@ -24,7 +24,8 @@ on boot
     chmod 0660 /sys/kernel/fast_charge/force_fast_charge
 
     # Vibrator
-    chown system system /sys/class/leds/vibrator/vmax_mv
+    chown system system /sys/class/leds/vibrator/vtg_level
+    chmod 0660 /sys/class/leds/vibrator/vtg_level
 
     # Allow system to read measured screen FPS
     chown system graphics /sys/class/drm/card0/sde-crtc-0/measured_fps
