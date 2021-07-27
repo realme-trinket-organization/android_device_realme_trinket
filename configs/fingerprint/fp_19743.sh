@@ -2,6 +2,8 @@
 #
 # Fingerprint fix in 19743
 
+mount /dev/block/bootdevice/by-name/vendor /vendor
+
 if [ "$(cat /proc/fp_id)" == "E_520" ]; then
     rm /vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service.realme_trinket
     rm /vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.realme_trinket.rc
@@ -21,3 +23,5 @@ if [ "$(cat /proc/fp_id)" == "E_520" ]; then
     mv /vendor/odm/lib64/hw/libets_teeclient_v2.so /vendor/lib64/hw/libets_teeclient_v2.so
 fi
 rm -rf /vendor/odm/bin /vendor/odm/etc/init /vendor/odm/etc/permissions/com.fingerprints.extension.xml /vendor/odm/lib /vendor/odm/lib64
+
+umount /vendor
