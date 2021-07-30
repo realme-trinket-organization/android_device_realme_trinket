@@ -52,11 +52,12 @@ void setRMX(unsigned int variant)
     realme_trinket_props prop[4] = {};
 
     std::string build_desc = "trinket-user 10 QKQ1.200209.002 release-keys";
+    std::string build_fingerprint = "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys";
 
     //RMX1911
     prop[0] = {
         build_desc,
-        "realme/RMX1911/RMX1911:10/QKQ1.200209.002/1608537052:user/release-keys",
+        build_fingerprint,
         "RMX1911",
         "RMX1911",
     };
@@ -64,7 +65,7 @@ void setRMX(unsigned int variant)
     // RMX1925
     prop[1] = {
         build_desc,
-        "realme/RMX1925/RMX1925:10/QKQ1.200209.002/1608537052:user/release-keys",
+        build_fingerprint,
         "RMX1925",
         "RMX1925",
     };
@@ -72,7 +73,7 @@ void setRMX(unsigned int variant)
     //RMX1927
     prop[2] = {
         build_desc,
-        "realme/RMX1927/RMX1927:10/QKQ1.200209.002/1608537052:user/release-keys",
+        build_fingerprint,
         "RMX1927",
         "RMX1927",
     };
@@ -80,7 +81,7 @@ void setRMX(unsigned int variant)
     //RMX2030
     prop[3] = {
         build_desc,
-        "realme/RMX2030/RMX2030:10/QKQ1.200209.002/1608537052:user/release-keys",
+        build_fingerprint,
         "RMX2030",
         "RMX2030",
     };
