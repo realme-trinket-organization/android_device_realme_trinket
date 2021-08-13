@@ -52,7 +52,7 @@ void setRMX(unsigned int variant)
     realme_trinket_props prop[4] = {};
 
     std::string build_desc = "trinket-user 10 QKQ1.200209.002 release-keys";
-    std::string build_fingerprint = "google/redfin/redfin:11/RQ3A.210705.001/7380771:user/release-keys";
+    std::string build_fingerprint = "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys";
 
     //RMX1911
     prop[0] = {
