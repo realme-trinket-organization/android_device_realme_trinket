@@ -1,4 +1,4 @@
-# ginkgo package version: QKQ1.200114.002 20.7.9, unless stated otherwise
+# RMX1911EX package version: QKQ1.200209.002 C.73, unless stated otherwise
 
 # Audio-ACDB
 vendor/etc/acdbdata/19021/adsp_avs_config.acdb
@@ -3074,7 +3074,6 @@ vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.latency@2.0.so
 
 # Listen
-vendor/lib/hw/sound_trigger.primary.trinket.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
@@ -3298,6 +3297,7 @@ product/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 product/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
 product/lib64/vendor.qti.hardware.slmadapter@1.0.so
 -product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
+vendor/bin/adpl
 vendor/bin/ATFWD-daemon
 vendor/bin/hw/qcrild
 vendor/bin/netmgrd
@@ -3307,6 +3307,7 @@ vendor/bin/qrtr-lookup
 vendor/bin/qrtr-ns
 vendor/bin/qti
 vendor/bin/rmt_storage
+vendor/bin/ssgqmigd
 vendor/bin/tftp_server
 vendor/etc/data/dsi_config.xml
 vendor/etc/data/netmgr_config.xml
@@ -3642,7 +3643,6 @@ vendor/etc/sensors/config/tsl2540.json
 vendor/etc/sensors/sns_reg_config
 
 # Soter
--vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
@@ -3661,7 +3661,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/bin/thermal-engine
 -vendor/lib64/libthermalclient.so
 -vendor/lib/libthermalclient.so
-vendor/lib64/libthermalfeature.so
 
 # Thermal - laurel_sprout V11.0.22.0.QFQMIXM
 vendor/etc/thermal-engine-high.conf
