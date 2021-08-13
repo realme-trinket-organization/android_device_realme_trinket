@@ -285,6 +285,7 @@ PRODUCT_PACKAGES += \
     init.oppo.fingerprints.sh \
     init.oppo.reserve.rc \
     init.msm.usb.configfs.rc \
+    init.qcom.crashdata.sh \
     init.qcom.early_boot.sh \
     init.qcom.post_boot.sh \
     init.qcom.rc \
