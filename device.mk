@@ -360,10 +360,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     product_charger_res_images
 
-# Notchbar killer
-PRODUCT_PACKAGES += \
-    NotchBarKiller
-
 # OMX
 PRODUCT_PACKAGES += \
     libavservices_minijail \
