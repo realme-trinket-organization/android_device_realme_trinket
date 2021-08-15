@@ -37,11 +37,11 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
     -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -162,0 L -162,00 L 162,00 L 162,0 Z</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -50,0 L -50,56 L 50,56 L 50,0 Z</string>
 
     <!-- Height of the status bar -->
-    <dimen name="status_bar_height_portrait">33.0dip</dimen>
-    <dimen name="status_bar_height_landscape">35.0dip</dimen>
+    <dimen name="status_bar_height_portrait">28.0dip</dimen>
+    <dimen name="status_bar_height_landscape">28.0dip</dimen>
 
     <!-- Whether the always on display mode is available. -->
     <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
