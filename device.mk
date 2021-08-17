@@ -300,6 +300,7 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.safailnet.rc \
     init.target.rc \
+    set_baseband.sh \
     ueventd.qcom.rc
 
 # IRQ
