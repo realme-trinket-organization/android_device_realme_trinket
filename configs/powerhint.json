@@ -17,8 +17,7 @@
                 "9999999",
                 "1612800",
                 "1305600",
-                "1017600",
-                "864000"
+                "1017600"
             ],
             "ResetOnInit": true
         },
@@ -28,7 +27,7 @@
             "Values": [
                 "9999999",
                 "1804800",
-                "1056000"
+                "902400"
             ],
             "DefaultIndex": 0,
             "ResetOnInit": true
@@ -38,8 +37,8 @@
             "Path": "/sys/devices/system/cpu/cpu4/cpufreq/scaling_min_freq",
             "Values": [
                 "9999999",
-                "1056000",
-                "652800",
+                "1401600",
+                "902400",
                 "0"
             ],
             "ResetOnInit": true
@@ -49,8 +48,8 @@
             "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/max_freq",
             "Values": [
                 "950000000",
-                "745000000",
-                "290000000"
+                "820000000",
+                "320000000"
             ],
             "DefaultIndex": 0,
             "ResetOnInit": true
@@ -60,10 +59,7 @@
             "Path": "/sys/class/kgsl/kgsl-3d0/devfreq/min_freq",
             "Values": [
                 "900000000",
-                "820000000",
-                "745000000",
                 "600000000",
-                "465000000",
                 "320000000"
             ],
             "ResetOnInit": true
@@ -210,10 +206,6 @@
             "Name": "PowerHALMainState",
             "Path": "vendor.powerhal.state",
             "Values": [
-                "CAMERA_STREAMING",
-                "CAMERA_STREAMING_4K",
-                "CAMERA_STREAMING_60FPS",
-                "CAMERA_STREAMING_SECURE",
                 "SUSTAINED_PERFORMANCE",
                 ""
             ],
@@ -249,7 +241,7 @@
             "PowerHint": "SUSTAINED_PERFORMANCE",
             "Node": "CPUBigClusterMaxFreq",
             "Duration": 0,
-            "Value": "1056000"
+            "Value": "902400"
         },
         {
             "PowerHint": "SUSTAINED_PERFORMANCE",
@@ -267,7 +259,7 @@
             "PowerHint": "INTERACTION",
             "Node": "CPUBigClusterMinFreq",
             "Duration": 100,
-            "Value": "1056000"
+            "Value": "902400"
         },
         {
             "PowerHint": "INTERACTION",
@@ -378,192 +370,6 @@
             "Value": "10000"
         },
         {
-            "PowerHint": "CAMERA_LAUNCH",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_LAUNCH",
-            "Node": "CPUBigClusterMinFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_LAUNCH",
-            "Node": "CPULittleClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_LAUNCH",
-            "Node": "CPULittleClusterMinFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_LAUNCH",
-            "Node": "PMQoSCpuDmaLatency",
-            "Duration": 1000,
-            "Value": "44"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING",
-            "Node": "PowerHALMainState",
-            "Duration": 0,
-            "Value": "CAMERA_STREAMING"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "1804800"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING",
-            "Node": "CPUBWSampleMs",
-            "Duration": 0,
-            "Value": "10"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING",
-            "Node": "CPUBWIOPercent",
-            "Duration": 0,
-            "Value": "80"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "PowerHALMainState",
-            "Duration": 0,
-            "Value": "CAMERA_STREAMING_60FPS"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "1804800"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "CPUBWSampleMs",
-            "Duration": 0,
-            "Value": "10"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "CPUBWIOPercent",
-            "Duration": 0,
-            "Value": "80"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "CPUBWHystTriggerCount",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_60FPS",
-            "Node": "CPUBWHystLength",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "PowerHALMainState",
-            "Duration": 0,
-            "Value": "CAMERA_STREAMING_4K"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "1804800"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "CPUBWSampleMs",
-            "Duration": 0,
-            "Value": "10"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "CPUBWIOPercent",
-            "Duration": 0,
-            "Value": "80"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "CPUBWHystTriggerCount",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_4K",
-            "Node": "CPUBWHystLength",
-            "Duration": 0,
-            "Value": "0"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_SECURE",
-            "Node": "PowerHALMainState",
-            "Duration": 0,
-            "Value": "CAMERA_STREAMING_SECURE"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_SECURE",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 0,
-            "Value": "1804800"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_SECURE",
-            "Node": "CPUBWSampleMs",
-            "Duration": 0,
-            "Value": "10"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_SECURE",
-            "Node": "CPUBWIOPercent",
-            "Duration": 0,
-            "Value": "80"
-        },
-        {
-            "PowerHint": "CAMERA_STREAMING_SECURE",
-            "Node": "CameraHalCpuset",
-            "Duration": 0,
-            "Value": "0-7"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPUBigClusterMinFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPULittleClusterMaxFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "CPULittleClusterMinFreq",
-            "Duration": 1000,
-            "Value": "9999999"
-        },
-        {
-            "PowerHint": "CAMERA_SHOT",
-            "Node": "PMQoSCpuDmaLatency",
-            "Duration": 1000,
-            "Value": "44"
-        },
-        {
             "PowerHint": "AUDIO_STREAMING",
             "Node": "PMQoSCpuDmaLatency",
             "Duration": 2000,
@@ -591,7 +397,7 @@
             "PowerHint": "EXPENSIVE_RENDERING",
             "Node": "GPUMinFreq",
             "Duration": 0,
-            "Value": "465000000"
+            "Value": "600000000"
         },
         {
             "PowerHint": "EXPENSIVE_RENDERING",
