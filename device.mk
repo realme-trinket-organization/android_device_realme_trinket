@@ -93,10 +93,10 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@6.0-impl \
-    android.hardware.audio.effect@6.0-impl \
+    android.hardware.audio@6.0-impl:32 \
+    android.hardware.audio.effect@2.0-impl:32 \
+    android.hardware.audio.effect@6.0-impl:32 \
     android.hardware.audio.service \
-    android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.primary.trinket \
     audio.r_submix.default \
@@ -108,13 +108,20 @@ PRODUCT_PACKAGES += \
     libvolumelistener
 
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default
+    android.hardware.bluetooth.audio@2.0-impl:32 \
+    audio.bluetooth.default \
+    libbluetooth_audio_session \
+    libbthost_if
 
 PRODUCT_PACKAGES += \
-    libsndmonitor \
+    libbatterylistener \
+    libcomprcapture \
+    libexthwplugin \
     libhdmiedid \
-    libhfp
+    libhdmipassthru \
+    libhfp \
+    libsndmonitor \
+    libspkrprot
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
