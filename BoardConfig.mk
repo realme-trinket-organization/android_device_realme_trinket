@@ -119,8 +119,8 @@ ODM_MANIFEST_19632_FILES := $(DEVICE_PATH)/configs/manifests/manifest_19632.xml
 ODM_MANIFEST_SKUS += 19632
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_realme_trinket
-TARGET_RECOVERY_DEVICE_MODULES := libinit_realme_trinket
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_trinket
+TARGET_RECOVERY_DEVICE_MODULES := libinit_trinket
 
 # Keystore
 TARGET_PROVIDES_KEYMASTER := true
