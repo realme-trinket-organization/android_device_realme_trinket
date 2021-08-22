@@ -28,8 +28,17 @@ PRODUCT_BRAND := Realme
 PRODUCT_DEVICE := realme_trinket
 PRODUCT_MANUFACTURER := Realme
 PRODUCT_NAME := lineage_realme_trinket
+PRODUCT_MODEL := Realme Trinket Series
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
+
+TARGET_VENDOR_PRODUCT_NAME := realme_trinket
+TARGET_VENDOR_DEVICE_NAME := realme_trinket
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="trinket-user 10 QKQ1.200209.002 release-keys"
+
+BUILD_FINGERPRINT := realme/RMX1911/RMX1911:10/QKQ1.200209.002/1608537052:user/release-keys
 
 # Time
 LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
