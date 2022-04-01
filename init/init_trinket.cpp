@@ -110,6 +110,7 @@ void vendor_load_properties()
             set_ro_product_prop(source, "model", "RMX2030");
             set_ro_product_prop(source, "name", "RMX2030");
         }
+        property_override("persist.vendor.fingerprint.fp_id", "E_520");
     }
     /* RMX1927 */
     else if (prjVersion == "19632") {
